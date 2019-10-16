@@ -21,6 +21,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/activity_register_tiet_full_name"
                 android:layout_width="match_parent"
+                android:imeOptions="actionNext"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -35,6 +36,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/activity_register_tiet_email"
                 android:layout_width="match_parent"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -49,6 +52,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/activity_register_tiet_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_home_va_switcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragment_home_btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Refresh"
+        android:textAllCaps="false" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/no_dish"
+        android:scaleType="centerCrop">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="120dp"
+            android:text="No hay recetas"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fragment_home_iv_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="21/09/2018"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/activity_main_tv_ingredients" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/activity_main_tv_ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Algunos ingredientes:"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_home_iv_photo" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/activity_main_tv_ingredient_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2 tomates rojos, en cuartos"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@id/activity_main_tv_ingredients"
+                app:layout_constraintTop_toBottomOf="@id/activity_main_tv_ingredients" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/activity_main_tv_ingredient_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1 chile pasilla, sin semillas y sin rabito"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@id/activity_main_tv_ingredients"
+                app:layout_constraintTop_toBottomOf="@id/activity_main_tv_ingredient_1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/activity_main_tv_ingredient_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1 diente ajo, pelado"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@id/activity_main_tv_ingredients"
+                app:layout_constraintTop_toBottomOf="@id/activity_main_tv_ingredient_2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/activity_main_tv_ingredient_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1 pedazo pequeño de cebolla blanca"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@id/activity_main_tv_ingredients"
+                app:layout_constraintTop_toBottomOf="@id/activity_main_tv_ingredient_3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/activity_main_tv_ingredient_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3 tazas caldo de verduras o pollo"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@id/activity_main_tv_ingredients"
+                app:layout_constraintTop_toBottomOf="@id/activity_main_tv_ingredient_4" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/activity_main_tv_ingredient_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1/2 cucharita orégano seco"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@id/activity_main_tv_ingredients"
+                app:layout_constraintTop_toBottomOf="@id/activity_main_tv_ingredient_5" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/activity_main_tv_ingredient_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sal y pimienta, al gusto"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@id/activity_main_tv_ingredients"
+                app:layout_constraintTop_toBottomOf="@id/activity_main_tv_ingredient_6" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Agregar a favoritos"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/activity_main_tv_ingredient_7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</ViewAnimator>
+
